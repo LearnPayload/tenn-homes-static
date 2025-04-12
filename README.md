@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/6f9ca85c-06d7-4e73-87f6-454bb1085d63)
+
+
+
 # shadcn/ui monorepo template
 
 This template is for creating a monorepo with shadcn/ui.
