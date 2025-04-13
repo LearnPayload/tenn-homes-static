@@ -14,6 +14,19 @@ import {
 } from "lucide-react";
 import { Header } from "@/components/header";
 import Hero from "@/components/hero";
+import singleFamilyHomeKnoxville from "@workspace/ui/assets/knoxville-single-family.png";
+import scandinavianHomeKnoxville from "@workspace/ui/assets/scandinavian.png";
+import modernFamilyHomeKnoxville from "@workspace/ui/assets/modern.png";
+import villaHomeKnoxville from "@workspace/ui/assets/villa.png";
+import momAvatar from "@workspace/ui/assets/mom-avatar.png";
+import attorneyAvatar from "@workspace/ui/assets/attorney.png";
+import ruralMomAvatar from "@workspace/ui/assets/rural-mom.png";
+import landPlot from "@workspace/ui/assets/land.png";
+import apartment from "@workspace/ui/assets/apartment.png";
+import office from "@workspace/ui/assets/office.png";
+import condo from "@workspace/ui/assets/condo.png";
+import logo from "@workspace/ui/assets/TENNHOMES.svg";
+//scandinavian
 const company_name = "Tenn Homes";
 
 export default function HomePage() {
@@ -91,14 +104,6 @@ export default function HomePage() {
                   Featured Properties in East Tennessee
                 </h2>
               </div>
-              <div className="flex gap-2">
-                <Button variant="outline" size="icon" className="rounded-full">
-                  <ChevronLeft className="h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="icon" className="rounded-full">
-                  <ChevronRight className="h-4 w-4" />
-                </Button>
-              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -106,7 +111,7 @@ export default function HomePage() {
               <Card className="overflow-hidden border-0 shadow-sm hover:shadow-md transition-shadow py-0">
                 <div className="relative">
                   <Image
-                    src="https://placehold.co/600x400/png"
+                    src={singleFamilyHomeKnoxville}
                     alt="Amazing Home For Family"
                     width={600}
                     height={400}
@@ -185,7 +190,7 @@ export default function HomePage() {
               <Card className="overflow-hidden border-0 shadow-sm hover:shadow-md transition-shadow py-0">
                 <div className="relative">
                   <Image
-                    src="https://placehold.co/600x400/png"
+                    src={scandinavianHomeKnoxville}
                     alt="Scandinavian Style Home"
                     width={600}
                     height={400}
@@ -264,7 +269,7 @@ export default function HomePage() {
               <Card className="overflow-hidden border-0 shadow-sm hover:shadow-md transition-shadow py-0">
                 <div className="relative">
                   <Image
-                    src="https://placehold.co/600x400/png"
+                    src={modernFamilyHomeKnoxville}
                     alt="Modern Family Home"
                     width={600}
                     height={400}
@@ -341,7 +346,7 @@ export default function HomePage() {
               <Card className="overflow-hidden border-0 shadow-sm hover:shadow-md transition-shadow py-0">
                 <div className="relative">
                   <Image
-                    src="https://placehold.co/600x400/png"
+                    src={villaHomeKnoxville}
                     alt="Elegant Villa"
                     width={600}
                     height={400}
@@ -387,7 +392,7 @@ export default function HomePage() {
               {/* Type 1 */}
               <div className="group relative overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/600x400/png"
+                  src={apartment}
                   alt="Apartment"
                   width={500}
                   height={300}
@@ -404,7 +409,7 @@ export default function HomePage() {
               {/* Type 2 */}
               <div className="group relative overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/500x300/png"
+                  src={singleFamilyHomeKnoxville}
                   alt="Single Family Home"
                   width={500}
                   height={300}
@@ -421,7 +426,7 @@ export default function HomePage() {
               {/* Type 3 */}
               <div className="group relative overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/500x300/png"
+                  src={villaHomeKnoxville}
                   alt="Villa"
                   width={500}
                   height={300}
@@ -436,7 +441,7 @@ export default function HomePage() {
               {/* Type 4 */}
               <div className="group relative overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/500x300/png"
+                  src={condo}
                   alt="Condo"
                   width={500}
                   height={300}
@@ -451,7 +456,7 @@ export default function HomePage() {
               {/* Type 5 */}
               <div className="group relative overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/500x300/png"
+                  src={landPlot}
                   alt="Land"
                   width={500}
                   height={300}
@@ -466,7 +471,7 @@ export default function HomePage() {
               {/* Type 6 */}
               <div className="group relative overflow-hidden rounded-lg">
                 <Image
-                  src="https://placehold.co/500x300/png"
+                  src={office}
                   alt="Office"
                   width={500}
                   height={300}
@@ -533,10 +538,11 @@ export default function HomePage() {
                 <div className="flex items-center">
                   <div className="mr-4 h-12 w-12 overflow-hidden rounded-full bg-accent">
                     <Image
-                      src="https://placehold.co/100x100/png"
+                      src={momAvatar}
                       alt="Client"
                       width={48}
                       height={48}
+                      className="object-cover size-12"
                     />
                   </div>
                   <div>
@@ -564,7 +570,7 @@ export default function HomePage() {
                 <div className="flex items-center">
                   <div className="mr-4 h-12 w-12 overflow-hidden rounded-full bg-accent">
                     <Image
-                      src="https://placehold.co/100x100/png"
+                      src={attorneyAvatar}
                       alt="Client"
                       width={48}
                       height={48}
@@ -595,7 +601,7 @@ export default function HomePage() {
                 <div className="flex items-center">
                   <div className="mr-4 h-12 w-12 overflow-hidden rounded-full bg-accent">
                     <Image
-                      src="https://placehold.co/100x100/png"
+                      src={ruralMomAvatar}
                       alt="Client"
                       width={48}
                       height={48}
@@ -622,14 +628,14 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {/* Blog Post 1 */}
-              <Card className="overflow-hidden border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="overflow-hidden border-0 shadow-sm gap-0 py-0 hover:shadow-md transition-shadow">
                 <div className="relative">
                   <Image
                     src="https://images.unsplash.com/photo-1596134474939-f248eb9ed3fe?q=80&w=3786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Downtown Knoxville Market Square"
                     width={500}
                     height={300}
-                    className="object-cover h-48 w-full"
+                    className="object-cover h-56 w-full"
                   />
                 </div>
                 <CardContent className="p-4">
@@ -654,14 +660,14 @@ export default function HomePage() {
               </Card>
 
               {/* Blog Post 2 */}
-              <Card className="overflow-hidden border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="overflow-hidden border-0 gap-0 shadow-sm hover:shadow-md py-0 transition-shadow">
                 <div className="relative">
                   <Image
                     src="https://images.unsplash.com/photo-1625663033411-61031d9ac19e?q=80&w=4287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Gatlinburg Scenic View"
                     width={500}
                     height={300}
-                    className="object-cover h-48 w-full"
+                    className="object-cover h-56 w-full"
                   />
                 </div>
                 <CardContent className="p-4">
@@ -685,14 +691,14 @@ export default function HomePage() {
               </Card>
 
               {/* Blog Post 3 */}
-              <Card className="overflow-hidden border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="overflow-hidden border-0 gap-0 shadow-sm hover:shadow-md py-0 transition-shadow">
                 <div className="relative">
                   <Image
                     src="https://images.unsplash.com/photo-1657312145619-8fdad5e7b663?q=80&w=4315&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Johnson City Downtown"
                     width={500}
                     height={300}
-                    className="object-cover h-48 w-full"
+                    className="object-cover h-56 w-full"
                   />
                 </div>
                 <CardContent className="p-4">
@@ -716,14 +722,14 @@ export default function HomePage() {
               </Card>
 
               {/* Blog Post 4 */}
-              <Card className="overflow-hidden border-0 shadow-sm hover:shadow-md transition-shadow">
+              <Card className="overflow-hidden border-0 gap-0 shadow-sm hover:shadow-md py-0 transition-shadow">
                 <div className="relative">
                   <Image
                     src="https://images.unsplash.com/photo-1509838174235-432f709c7bfd?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Fall colors in the Smokies"
                     width={500}
                     height={300}
-                    className="object-cover h-48 w-full"
+                    className="object-cover h-56 w-full"
                   />
                 </div>
                 <CardContent className="p-4">
@@ -765,9 +771,11 @@ export default function HomePage() {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="bg-background text-foreground border-0"
+                className="bg-background text-foreground border-0 h-12 md:text-base"
               />
-              <Button variant="outline">SIGN UP</Button>
+              <Button variant="outline" size="lg" className="h-12 md:text-base">
+                SIGN UP
+              </Button>
             </div>
           </div>
         </section>
@@ -776,12 +784,15 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="bg-background text-foreground border-t">
         <div className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div className="max-w-md">
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-xl font-bold text-primary">
-                  {company_name}
-                </span>
+                <Image
+                  src={logo}
+                  alt="Tenn Homes Logo"
+                  width={150}
+                  height={120}
+                />
               </div>
               <p className="text-muted-foreground mb-4">
                 Your trusted partner for East Tennessee real estate since 2005.
@@ -840,158 +851,134 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Market</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/about"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/listings"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Listings
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/agents"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Agents
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Real Estate</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Houses
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Apartments
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Condos
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Villas
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Land
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Commercial
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Help</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Privacy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Terms
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Support
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-muted-foreground hover:text-primary"
-                  >
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              <div>
+                <h3 className="text-lg font-semibold mb-4">Market</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      href="/"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/about"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/listings"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Listings
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/blog"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/contact"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-4">Real Estate</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Houses
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Apartments
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Condos
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Land
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-4">Help</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Privacy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Terms
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      FAQ
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Support
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-muted-foreground hover:text-primary"
+                    >
+                      Contact
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
